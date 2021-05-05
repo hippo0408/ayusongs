@@ -14,7 +14,7 @@
     .header-title{
         top:10%;
         left: 0%;
-        font-size: 17px;
+        font-size: 10px;
         opacity: 0.8;
     }
 
@@ -32,6 +32,9 @@
         width: 100%;
     }
 
+    .song-date{
+       font-size: 10px;
+    }
   
 
     iframe{
