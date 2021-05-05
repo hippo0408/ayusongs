@@ -1,0 +1,492 @@
+body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    }
+    
+    * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+
+    li{
+        list-style: none;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+        #open  {
+            float: right;
+             color:rgb(233, 50, 172);
+            font-size: 40px;
+            cursor: pointer;
+            position: absolute;
+            top:1%;
+            right: 2%;
+            position: fixed;
+         }
+        
+        #close{
+            position: absolute;
+            top:2%;
+            right: 2%;
+           font-size: 49px;
+           cursor: pointer; 
+           color:rgb(233, 50, 172);
+        }
+        
+        .sub-header #open.hide{
+            display: none;
+        }
+        
+        
+        .overlay{
+            position:fixed;
+            background-image:url("../images/image07.jpeg");
+            background-size: cover;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity .6s;
+            z-index:1;
+            width: 100%;
+            top:0;
+            right: 0;
+            bottom: 0;
+            overflow: scroll;
+        }
+        
+       
+        
+        .overlay.show{
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .overlay.show li{
+            opacity: 1;
+            transform: none;
+        }
+        
+        .overlay ul li{
+            border-bottom: 1px solid cornsilk;
+            opacity: 0;
+            transform: translateX(2000px);
+            transition: opacity .3s,transform 0.8s;
+            display: block;
+        }
+        
+        
+        .overlay ul li a{
+            color:#777;
+            display: block;
+            text-align: left;
+            font-size: 15px;
+        }
+        
+        .sub-menu{
+            width: 100%;
+            opacity: 0.9;
+            position: fixed;
+            z-index:1 ;
+            top:0;  
+        }
+.sub-icon li{
+float: left;
+margin-left: 20px;
+}
+
+ul.sub-songs .sub-icon li a{
+    font-size: 30px;
+}
+
+.sub-songs{
+    padding-top: 50px;
+}
+ ul.sub-songs li{
+    padding:10px 5px;
+    z-index: 1;
+    position: relative;
+}
+
+ ul.sub-songs li a{
+    color: rgb(250, 7, 217);
+    display: block;
+    font-weight: bolder;
+    font-family: "Noto Sans JP","游ゴシック体","游ゴシック","Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+
+.subnav{
+    display: none;
+    border-top: 1px solid black;
+    border-bottom:1px solid black;
+    padding:10px 0;
+}
+
+ul.subnav li {
+    border: 0;
+}
+
+.sub-ranking{
+    display: flex;
+}
+
+ul.sub-songs li a:hover{
+    opacity:0.7; 
+    background-color: pink;
+    display: block;
+}
+
+.drop-list{
+    display: none;
+}
+
+.fa-chevron-down{
+    float: right;
+    margin-right: 20px;
+    padding:10px;
+    position: absolute;
+    top:2px;
+    right: 5px;
+    color:  black;
+}
+
+ul.sub-icon li a{
+    color:  rgb(250, 7, 217);
+    font-size: 25px;
+}
+
+ul.sub-icon li:hover{
+    background-color: pink;
+}
+
+        
+.side-bar{
+    width: 20%;
+    padding-top: 60px;
+}
+
+.side-menu h3{
+    margin-left: -5px;
+    font-size: 30px;
+    color: #777;
+}
+
+.side-menu{
+  position:-webkit-sticky;
+  position: sticky;
+  top: 0;
+           }
+
+.side-bar ul{
+  margin-left: -3px;
+           }
+
+.side-bar ul li{
+  margin-bottom: 15px;
+           }
+
+.top-border{
+ font-family:monospace;
+ color: #777;
+ border-bottom: 1px solid #777;
+           }
+
+.side-bar ul li a{
+    font-size: 14px;
+    color:#777;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           }
+
+.side-bar ul li a:hover{
+   opacity: .7;
+           }
+ .main{
+   width: 80%;
+      }
+
+ .header-img{
+    width: 100vw;
+    position: relative;
+   }
+
+   .slider img{
+    width: 100vw;
+    height: 800px;
+    background-size: cover;
+    position: relative;
+    top:0;
+    left: 0;
+   }
+
+.header-icon ul{
+    position: absolute;
+    top:2%;
+    right: 5%;
+}
+
+   .header-icon ul li{
+       float: left;
+       margin-left: 20px;
+       font-size: 30px;
+   }
+
+   .header-icon ul li a{
+    color: #fff;
+   }
+
+   .header-icon ul li a:hover{
+       color: grey;
+   }
+
+   .header-title{
+       position: absolute;
+       top:4%;
+       left: 30%;
+       color: #fff;
+       line-height: 75px;
+       text-align: center;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .header-title h1{
+        font-size: 70px;
+    }
+
+    .header-title h2{
+        border-bottom: 1px solid #fff;
+    }
+
+   .setlist li a{
+       color: #fff;
+       font-size: 30px;
+       line-height: 70px;
+       transition: .8s;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       display: block;
+   }
+
+   .setlist li a:hover{
+       opacity: .5;
+   }
+
+   .number{
+       font-weight: bold;
+   }
+
+   .no1{
+       position: absolute;
+       top:35%;
+       left: 8%;
+   }
+
+   .no2{
+       position: absolute;
+       top:35%;
+       left: 55%;
+   }
+   
+  
+ .main h2{
+       font-size: 45px;
+       text-align: center;
+       background-color: rgb(230, 225, 225);
+       color: rgb(30, 29, 29);
+       width: 80%;
+       margin: 0 auto;
+       margin-top: 50px;
+       margin-bottom:30px ;
+   }
+   
+   .contents{
+       width: 80%;
+       margin: 0 auto;
+   }
+
+   .coment{
+       padding-bottom: 80px;
+   }
+
+    table{
+       border-bottom: 3px solid black;
+       width: 100%;
+       font-size: 30px;
+       border-spacing: 0;
+       border-collapse: collapse;
+   }
+
+   .contents table td{
+       padding-left: 30px;
+
+   }
+
+th{
+    width: 10%;
+    background-color: black;
+    color: #fff;
+    padding: 8px 15px 2px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+}
+
+   td{
+       width: 90%;
+   }
+
+   .song-date{
+       border:1px solid #777;
+       margin:10px 0;
+       font-size: 20px;
+       color: #777;
+       text-align: left;
+   }
+
+
+   .song-date td{
+       width: 50%;
+       border:1px solid #777;
+   }
+
+   iframe{
+       width: 100%;
+       height: 600px;
+       transition-duration:.3s;
+    }
+
+    iframe:hover{
+        transform: scale(1.1);
+        transition-duration:.3s ;
+    }
+
+   .coment{
+       margin-top: 20px;
+       line-height: 30px;
+   }
+
+   .page-top{
+    position: fixed;
+    right: 5%;
+    bottom:10px;
+    z-index: 99;
+}
+
+.fa-chevron-circle-up{
+    font-size: 60px;
+    color: rgb(236, 20, 128);
+}
+
+.main-wrapper img{
+    visibility: hidden;
+}
+
+.setlist li{
+    text-align: left;
+}
+
+.drop-down{
+    background-color: #fff;
+    border:4px solid pink;
+    position: relative;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+.drop-down li{
+    border-bottom: 1px solid pink;
+}
+
+.drop-down li:last-child{
+    border-bottom: none;
+    margin-bottom:0;
+}
+
+.drop-down li a{
+    color: 
+    #777;
+    display: block;
+}
+
+.drop-down::before{
+  content:"";
+  width: 0;
+  height: 0;
+  border:12px solid transparent;
+  position: absolute;
+  top:-28px;
+  left: 0;
+  border-bottom-color: pink;
+
+}
+
+.sub-list{
+    margin-top: -30px;
+    padding-bottom: 20px;
+}
+
+.sub-list li{
+    margin-bottom: -30px;
+}
+
+.sub-list li a{
+font-size: 22px;
+color: #fff;
+}
+
+.line{
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    position: fixed;
+    top:50%;
+    z-index: 2;
+}
+
+.up{
+    width:100%;
+    height: 50%;
+    background-color: #000;
+    position: fixed;
+    z-index:1 ;
+}
+
+.down{
+    width: 100%;
+    height: 50%;
+    background-color:#000;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+header{
+   z-index: 0;
+}
+
+#open-icon.rotate{
+    transform:rotate(180deg);
+}
+
+footer{
+    background:rgb(233, 96, 164) ;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}

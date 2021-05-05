@@ -1,0 +1,48 @@
+@media(max-width:780px){
+    .header-icon{
+        display: none;
+    }
+
+    .side-bar{
+        display: none;
+    }
+
+    .title-wrapper{
+        display: none;
+    }
+
+    .header-title{
+        top:10%;
+        left: 0%;
+        font-size: 17px;
+        opacity: 0.8;
+    }
+
+    .header-img img{
+        width: 100%;
+        height: 500px;
+    }
+
+
+    .main{
+        width: 100%;
+    }
+
+    .main-wrapper{
+        width: 100%;
+    }
+
+  
+
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+
+@media(min-width:780px){
+    .sub-header{
+        display: none;
+    } 
+ }
